@@ -1,21 +1,20 @@
-/* Reset some default styles */
+/* Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body Styling */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   padding: 20px;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* Container for the app */
 .container {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
   background: #fff;
   padding: 30px;
@@ -23,19 +22,34 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Title */
 h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* Balance Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toggle-theme {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggle-theme:hover {
+  background-color: #0056b3;
+}
+
 .balance {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Summary Section (Income & Expense) */
 .summary {
   display: flex;
   justify-content: space-between;
@@ -48,7 +62,6 @@ h2 {
   text-align: center;
 }
 
-/* Money Text Styling */
 .money {
   font-size: 1.2em;
   font-weight: bold;
@@ -62,14 +75,12 @@ h2 {
   color: red;
 }
 
-/* Form Inputs */
 form input {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
 }
 
-/* Add Button */
 form button {
   width: 100%;
   padding: 10px;
@@ -85,13 +96,11 @@ form button:hover {
   background: #0056b3;
 }
 
-/* Transaction List */
 .list {
   list-style-type: none;
   margin-top: 10px;
 }
 
-/* Each Transaction Item */
 .list li {
   display: flex;
   justify-content: space-between;
@@ -109,7 +118,6 @@ form button:hover {
   border-color: red;
 }
 
-/* Delete Button */
 .delete-btn {
   background: none;
   color: red;
@@ -117,3 +125,37 @@ form button:hover {
   font-weight: bold;
   cursor: pointer;
 }
+
+.history {
+  margin-top: 20px;
+}
+
+.history-block {
+  background-color: #eaeaea;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.history-block h4 {
+  margin-bottom: 5px;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .container {
+  background-color: #2c2c2c;
+}
+
+body.dark .list li {
+  background-color: #444;
+}
+
+body.dark .history-block {
+  background-color: #333;
+}
+
