@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p><strong>Balance:</strong> ₹${balance}</p>
       `;
       history.appendChild(block);
-    }
+    } // ✅ This closing brace was missing
   }
 
   // ✅ Format "YYYY-MM" to "Month Year"
@@ -136,4 +136,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   init();
 });
-
