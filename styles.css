@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container for the app */
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Balance Section */
+.balance {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Summary Section (Income & Expense) */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Money Text Styling */
+.money {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.plus {
+  color: green;
+}
+
+.minus {
+  color: red;
+}
+
+/* Form Inputs */
+form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Add Button */
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Transaction List */
+.list {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+/* Each Transaction Item */
+.list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 10px;
+  border-right: 5px solid;
+  margin-bottom: 10px;
+}
+
+.list li.plus {
+  border-color: green;
+}
+
+.list li.minus {
+  border-color: red;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: none;
+  color: red;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
